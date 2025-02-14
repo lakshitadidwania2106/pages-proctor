@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships and Placement Details</title>
+    <style>
+        #row{
+            height: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .category {
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            th, td {
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th colspan="4">Internships and Placement Details</th>
+            </tr>
+            <tr>
+                <td rowspan="2" class="category">Internships</td>
+                <th>Name of the Company</th>
+                <th>Duration</th>
+                <th>Stipend</th>
+            </tr>
+            <tr>
+                <td id="row"></td>
+                <td id="row"></td>
+                <td id="row"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="category">Placement</td>
+                <th>Name of the Company</th>
+                <th>Package</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td id="row"></td>
+                <td id="row"></td>
+                <td id="row"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

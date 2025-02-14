@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personnel Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            box-sizing: border-box; /* Ensures padding does not affect element's width */
+        }
+        textarea {
+            resize: vertical;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1200px) { /* Tablet and below */
+            table {
+                width: 90%;
+            }
+
+            th, td {
+                font-size: 14px; /* Slightly smaller font size on tablets */
+            }
+
+            input, textarea {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) { /* Phones in landscape and small tablets */
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                font-size: 12px; /* Smaller font size for mobile */
+                padding: 8px;
+            }
+
+            input, textarea {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            h2 {
+                font-size: 18px; /* Smaller heading */
+            }
+
+            /* Adjusting padding for better readability */
+            th, td {
+                padding: 6px;
+            }
+        }
+
+        @media (max-width: 480px) { /* Phones in portrait */
+            body {
+                margin: 10px;
+            }
+
+            table {
+                width: 100%;
+                border: none;
+            }
+
+            th, td {
+                font-size: 12px; /* Further decrease font size */
+                padding: 6px; /* Reduced padding */
+            }
+
+            input, textarea {
+                font-size: 12px;
+                padding: 6px; /* Reduced padding */
+            }
+
+            h2 {
+                font-size: 16px; /* Even smaller heading */
+                text-align: center;
+            }
+
+            textarea {
+                height: 80px; /* Limit height of text areas on small screens */
+            }
+        }
+
+        /* Optional: Add some spacing between inputs on larger screens */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .row > div {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Personnel Information</h2>
+    <table>
+        <tr>
+            <th>Parent Name</th>
+            <td><input type="text" placeholder="Mother"></td>
+            <td><input type="text" placeholder="Father"></td>
+        </tr>
+        <tr>
+            <th>Occupation</th>
+            <td><input type="text" placeholder="Mother"></td>
+            <td><input type="text" placeholder="Father"></td>
+        </tr>
+        <tr>
+            <th rowspan="2">Address</th>
+            <td colspan="2"><input type="text" placeholder="Permanent"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Local"></td>
+        </tr>
+        <tr>
+            <th rowspan="3">Contact Number & Email Id</th>
+            <td colspan="2"><input type="text" placeholder="Student"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Parent"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Guardian"></td>
+        </tr>
+        <tr>
+            <th>Student DOB</th>
+            <td colspan="2"><input type="date"></td>
+        </tr>
+        <tr>
+            <th>Hobbies</th>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Technologies Known</th>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Certifications/Workshops/Conferences</th>
+            <td colspan="2"><textarea placeholder="Enter certifications or workshops"></textarea></td>
+        </tr>
+        <tr>
+            <th>Paper Published</th>
+            <td colspan="2"><textarea placeholder="Enter published papers"></textarea></td>
+        </tr>
+        <tr>
+            <th>Projects</th>
+            <td colspan="2"><textarea placeholder="Enter project details"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>
